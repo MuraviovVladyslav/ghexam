@@ -1,0 +1,63 @@
+.site-header {
+  display: flex;
+  align-items: center;
+  padding: 67px 0;
+  position: absolute;
+  width: 98%;
+  z-index: 9999;
+}
+
+.menu-toggle {
+  margin-right: 50px;
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  li {
+    margin-right: 60px;
+
+    a {
+      color: $color__text-main;
+      font: 800 14px $font__main;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.toggled #primary-menu{
+  display: none;
+}
+
+.site-branding {
+  width: 30%;
+  text-align: center;
+}
+
+.header-searchform {
+  text-align: right;
+  width: 30%;
+
+  &-input {
+    width: 333px;
+    padding: 15px 0 14px 49px;
+    border: none;
+    border-left: 1px solid $color__border;
+    &::placeholder {
+      font: 700 14px $font__secondary;
+      color: $color__text-main;
+      text-transform: uppercase;
+    }
+  }
+
+  &-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+  }
+}

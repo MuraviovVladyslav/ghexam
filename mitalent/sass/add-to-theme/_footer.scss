@@ -1,0 +1,83 @@
+.site-footer {
+  padding-top: 200px;
+}
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0 40px;
+  position: relative;
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: $color__pseudo-element;
+    height: 2px;
+  }
+
+  @media screen and (max-width: 37.5em) {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.footer-newsletter {
+  width: 333px;
+  padding: 15px 0 14px 50px;
+  border: none;
+  border-left: 1px solid $color__border;
+  &::placeholder {
+    font: 700 14px $font__secondary;
+    color: $color__text-main;
+    text-transform: uppercase;
+  }
+}
+.footer-newsletter-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+}
+.wpcf7-form p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+
+    @media screen and (max-width: 37.5em) {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &-social-link {
+    margin-right: 40px;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:visited {
+      color: $color__text-main;
+    }
+  }
+  &-copyright {
+    font: 400 15px $font__secondary;
+    @media screen and (max-width: 37.5em) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &-logo {
+    @media screen and (max-width: 37.5em) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
